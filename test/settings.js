@@ -11,7 +11,7 @@ describe('settings', function () {
         settings.mode = 'development';
       });
     });
-    describe('default prouction', function () {
+    describe('default production', function () {
       it('is `"public, max-age=60"`', function () {
         settings.mode = 'production';
         equal(normalize().cache, 'public, max-age=60');
